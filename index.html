@@ -22,20 +22,17 @@
 <body>
  <!--start nav-->
  <nav>
-  <div class="max-lg:collapse bg-base-200 shadow-sm w-full rounded-md">
-  <input id="navbar-1-toggle" class="peer hidden" type="checkbox" />
-  <label for="navbar-1-toggle" class="fixed inset-0 hidden max-lg:peer-checked:block"></label>
+  <div class="bg-base-200 shadow-sm w-full rounded-md">
+ 
   <div class="collapse-title navbar">
     <div class="navbar-start">
-      <label for="navbar-1-toggle" class="btn btn-ghost lg:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-      </label>
+    
       <div class="flex">
         <img class="max-w-[25%]" src=".//assets/logo.png" alt="">
-        <button class="btn btn-ghost text-xl">SCHOOL</button>
+        <h2 class="text-xl">SCHOOL</h2>
       </div>
     </div>
-    <div class="navbar-center hidden lg:flex">
+    <div class="hidden md:block navbar-center lg:flex">
       <ul class="menu menu-horizontal px-1">
         <li><button class="text-[#FEA301]">Home</button></li>
         <li><button class="text-[#01ACFD]">About</button></li>
@@ -45,30 +42,39 @@
       </ul>
     </div>
     <div class="navbar-end">
-      <button class="btn btn-warning text-white px-8">Connect</button>
+  
+    <div class="hidden md:block">
+        <button class="btn btn-warning text-white px-8 ">Connect</button>
+    </div>
+    </div>
+    <div class="absolute right-0">
+        <label for="navbar-1-toggle" class="btn btn-ghost block md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+      </label>
     </div>
   </div>
+  
  </nav> 
  <!--start hero section-->
- <section class="max-w-[1160px] flex mx-auto justify-between">
+ <section class="max-w-[1160px] flex flex-col-reverse items-center  md:flex-row mx-auto px-5 justify-between">
 <div>
-<h1 class="text-[3.8rem]"><span class="text-[#FEA301]">Empowering</span> <br>
+<h1 class="text-[2rem] md:text-[3.8rem]"><span class="text-[#FEA301]">Empowering</span> <br>
 students from small age <span class="text-[#01ACFD]">towards vision</span></h1>
 <p>With the courage, Confidence, Creativity and Compassion to make <br>their Unique Contribution in a Diverse and Dynamic World.</p>
 <button class="btn btn-warning bg-black text-white my-3">Enroll Now</button>
 </div>
 
 <div>
-<img class="w-full" src="./assets/hero-kids.png" alt="">
+<img class="md:w-full" src="./assets/hero-kids.png" alt="">
 </div>
  </section>  
 
  <!--standard sec start here-->
  <section>
-<h1 class="text-black text-[2.5rem] text-center my-[60px]">Standard Curriculum</h1>
-<div class="flex items-center max-w-[1160px] mx-auto gap-10">
+<h1 class="text-black text-[2rem] md:text-[2.5rem] text-center my-[60px]">Standard Curriculum</h1>
+<div class="md:flex items-center max-w-[1160px] mx-auto gap-10">
     <div class="shadow-sm p-3 flex flex-col items-center w-full">
-        <img class="mx-auto p-2" src="./assets/kinder.png" alt="">
+        <img class="max-w-full mx-auto p-2" src="./assets/kinder.png" alt="">
         <h2 class="text-center">Kinder (3-6) Years</h2>
         <p class="text-center">Cum sociis natoque penatibus et magnis
 dis parturient montes, nascetur ridiculus
@@ -76,7 +82,7 @@ mu sdis parturient</p>
         <button class="text-[#64C8FF] my-2">Read More</button>
     </div>
     <div class="shadow-sm p-3 flex flex-col items-center w-full">
-        <img class="mx-auto p-2" src="./assets/elementary.png" alt="">
+        <img class="max-w-full mx-auto p-2" src="./assets/elementary.png" alt="">
         <h2 class="text-center">Elementary School</h2>
         <p class="text-center">Cum sociis natoque penatibus et magnis
 dis parturient montes, nascetur ridiculus
@@ -84,7 +90,7 @@ mu sdis parturient</p>
         <button class="text-[#F0AA00] my-2">Read More</button>
     </div>
     <div class="shadow-sm p-3 flex flex-col items-center w-full">
-        <img class="mx-auto p-2" src="./assets/middle.png" alt="">
+        <img class="max-w-full mx-auto p-2" src="./assets/middle.png" alt="">
         <h2 class="text-center">Middle (10-16) Years</h2>
         <p class="text-center">Cum sociis natoque penatibus et magnis
 dis parturient montes, nascetur ridiculus
@@ -97,11 +103,11 @@ mu sdis parturient</p>
 
  <!--our stories section-->
  <section>
-    <h1 class="text-center my-[60px] text-[2.5rem]">Our Stories</h1>
-    <div class="flex gap-5 mx-auto max-w-[1160px]">
+    <h1 class="text-center my-[60px] text-[2rem] md:text-[2.5rem]">Our Stories</h1>
+    <div class="md:flex gap-5 mx-auto max-w-[1160px]">
 <div class="shadow-xl  w-full col-span-2 row-span-2 p-5 relative">
-  <img class="rounded-xl" src="./assets/story-1.png" alt="">
-<button class="rounded-full absolute top-[320px] left-10 p-3 bg-[#3CD8E8]">November 19, 2019</button>
+  <img class="w-full rounded-xl" src="./assets/story-1.png" alt="">
+<p class="inline-block max-w-full rounded-full xl:absolute top-[320px] left-10 p-3 bg-[#3CD8E8]">November 19, 2019</p>
 
 <h3 class="font-bold my-5">A fun toddler coloring training on
 classroom</h3>
@@ -111,23 +117,23 @@ changes is a platform for open discussion in an inclusive and
 collaborative environment, providing the...</p>
 </div>
 
-<div class="w-full grid relative grid-cols-2 gap-5">
+<div class="w-full grid relative grid-cols-2 md:gap-5">
     <div class="shadow-xl p-2 w-full col-span-1">
       <img class="rounded-xl w-full" src="./assets/story-2.png" alt="">
-<button class="rounded-full absolute top-[130px] left-10 p-3 bg-[#95B226] text-white">November 19, 2019</button>
+<p class="inline-block max-w-full rounded-full xl:absolute top-[130px] left-10 p-1 mt-1 md:p-3 bg-[#95B226] text-white">November 19, 2019</p>
 <h3 class="font-bold mt-5">Find out if a school fits the
 family’s needs</h3>
 </div>
 
 <div class="shadow-xl col-span-1 p-2 w-full">
   <img class="rounded-xl w-full" src="./assets/story-3.png" alt="">
-<button class="rounded-full absolute top-[130px] left-80 p-3 bg-[#5D58F0] text-white">September 10, 2019</button>
+<p class="inline-block max-w-full rounded-full xl:absolute top-[130px] left-80 p-1 mt-1 md:p-3 bg-[#5D58F0] text-white">September 10, 2019</p>
 <h3 class="font-bold mt-5">Classroom management
 techniques for new tutors</h3>
 </div>
 <div class="shadow-xl col-span-1 p-2 w-full">
   <img class="rounded-xl w-full" src="./assets/story-4.png" alt="">
-<button class="rounded-full absolute top-[400px] left-10 p-3 bg-[#95B226] text-white">September 10, 2019</button>
+<p class="inline-block max-w-full rounded-full xl:absolute top-[400px] left-10 p-1 mt-1 md:p-3 bg-[#95B226] text-white">September 10, 2019</p>
 <h3 class="font-bold mt-5">Summer math & literacy
 centres for kids</h3>
 </div>
@@ -135,7 +141,7 @@ centres for kids</h3>
 <div class="shadow-xl col-span-1 p-2 w-full">
   <img class="rounded-xl w-full" src="./assets/story-5.png" alt="">
 
-<button class="rounded-full absolute top-[400px] left-80 p-3 px-8 bg-[#5D58F0] text-white">July 19, 2019</button>
+<p class="inline-block max-w-full rounded-full xl:absolute top-[400px] left-80 p-1 mt-1 md:p-3 px-8 bg-[#5D58F0] text-white">July 19, 2019</p>
 <h3 class="font-bold mt-5">Conversation rhymes
 improve kids listenings</h3>
 </div>
@@ -145,5 +151,36 @@ improve kids listenings</h3>
 
  </section>
  <button class="btn btn-warning text-white bg-black px-10 justify-center mx-auto my-12  flex">View All</button>
+
+ <!--footer-section-->
+ <footer class="bg-cyan-400">
+  <section class="md:flex px-8 justify-between gap-16 mx-auto max-w-[1160px] py-20">
+<div class="">
+   <div class=" w-full">
+     <div class="flex gap-2">   <img class="max-w-[25%]" src=".//assets/logo.png" alt="">
+        <h1 class="text-[1.5rem] font-semibold text-white">Kids <br> Education</h1></div>
+        <p class="my-3 text-white">Kids Education About School Keep In Touch Home Pizza ipsum dolor meat lovers buffalo. Deep dolor roll melted bacon Bianca pan bacon pineapple Aussie. Mayo rib sauce Hawaiian meatball.About Facilities Admission</p>
+      </div>     
+</div>
+
+<div class="w-full">
+  <h4 class="text-[1.2rem] font-semibold text-white">About School</h4>
+  <p class="text-white py-2">Home</p>
+  <p class="text-white py-2">About</p>
+  <p class="text-white py-2">Facilities</p>
+  <p class="text-white py-2">Admission</p>
+</div>
+
+<div class="w-full">
+ <h4 class="text-[1.5rem] font-semibold text-white">Keep In Touch</h4>
+<div class="w-full flex gap-1">
+   <a class="bg-gray-400 rounded-xl text-white p-3 " href="#"><i class="fa-brands fa-facebook"></i></a>
+ <a class="bg-gray-400 rounded-xl text-white p-3 " href="#"><i class="fa-brands fa-firefox-browser"></i></a> 
+ <a class="bg-gray-400 rounded-xl text-white p-3 " href="#"><i class="fa-brands fa-twitter"></i></a> 
+ <a class="bg-gray-400 rounded-xl text-white p-3 " href="#"><i class="fa-brands fa-google-plus-g"></i></a> 
+</div>
+</div>
+  </section>
+ </footer>
 </body>
 </html>
